@@ -3,3 +3,4 @@ geopandas
 osmnx
 OSMPythonTools
 streamlit
+streamlit_folium
