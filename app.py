@@ -1,15 +1,15 @@
 import streamlit as st
-import geopandas as gp
-import folium, osmnx, OSMPythonTools
+#import geopandas as gp
+#import folium, osmnx, OSMPythonTools
 from streamlit_folium import st_folium
 
-st.write(folium.__version__)
-st.write(osmnx.__version__)
-st.write(OSMPythonTools.pkgVersion)
+#st.write(folium.__version__)
+#st.write(osmnx.__version__)
+#st.write(OSMPythonTools.pkgVersion)
 
 #url = 's3://quantcldata/varios/openstreetmap.pk'
 url = 's3://quantcldata/OSM/cities.pk'
-
+st.write(url)
 #odf = gp.read_file(url)
 #st.write(odf.head())
 
