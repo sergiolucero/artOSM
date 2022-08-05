@@ -7,14 +7,16 @@ st.write(folium.__version__)
 st.write(osmnx.__version__)
 st.write(OSMPythonTools.pkgVersion)
 
-url = 's3://quantcldata/varios/openstreetmap.pk')
+#url = 's3://quantcldata/varios/openstreetmap.pk'
+url = 's3://quantcldata/OSM/cities.pk'
+
 odf = gp.read_file(url)
 
 st.write(odf)
 
-for ciudad, cdf in odf.groupby('ciudad'):
-    cdf['centro']=cdf.geometry.apply(lambda g: g.centroid)
-    centro = cdf.iloc[0]['centro']
-    st.subheader(ciudad)
-    cfm = folium.Map(location=(centro.y, centro.x)  # centroid
-    st_folium(cfm)
+#for ciudad, cdf in odf.groupby('ciudad'):
+#    cdf['centro']=cdf.geometry.apply(lambda g: g.centroid)
+#    centro = cdf.iloc[0]['centro']
+#    st.subheader(ciudad)
+#    cfm = folium.Map(location=(centro.y, centro.x)  # centroid
+#    st_folium(cfm)
