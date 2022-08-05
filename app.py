@@ -10,9 +10,9 @@ st.write(OSMPythonTools.pkgVersion)
 #url = 's3://quantcldata/varios/openstreetmap.pk'
 url = 's3://quantcldata/OSM/cities.pk'
 
-odf = gp.read_file(url)
+#odf = gp.read_file(url)
+#st.write(odf.head())
 
-st.write(odf)
 
 #for ciudad, cdf in odf.groupby('ciudad'):
 #    cdf['centro']=cdf.geometry.apply(lambda g: g.centroid)
